@@ -1,0 +1,139 @@
+############# config ##################
+#
+# set base_path    /var/spool/apt-mirror
+set base_path   /home/adiaz/public_html/apt-mirror/
+#
+set mirror_path  $base_path/mirror
+set skel_path    $base_path/skel
+set var_path     $base_path/var
+set cleanscript $var_path/clean.sh
+# set defaultarch  <running host architecture>
+set postmirror_script $var_path/postmirror.sh
+# set run_postmirror 0
+set nthreads     50
+set _tilde 0
+#
+############# end config ##############
+ 
+ 
+######  PRINCIPAL DEBIAN LENNY & SQUEEZE (MAIN - CONTRIB - NON-FREE) ######
+#deb-amd64  http://debian.cantv.net/debian lenny main contrib non-free
+#deb-i386 http://debian.cantv.net/debian lenny main contrib non-free
+#deb-src http://debian.cantv.net/debian lenny main contrib non-free
+#deb-amd64  http://debian.cantv.net/debian squeeze main contrib non-free
+#deb-i386 http://debian.cantv.net/debian squeeze main contrib non-free
+#deb-src http://debian.cantv.net/debian squeeze main contrib non-free
+ 
+######  PROPOSED UPDATES DEBIAN LENNY & SQUEEZE (MAIN - CONTRIB - NON-FREE) ######
+#deb-amd64 http://debian.cantv.net/debian lenny-proposed-updates main contrib non-free
+#deb-i386 http://debian.cantv.net/debian lenny-proposed-updates main contrib non-free
+#deb-amd64 http://debian.cantv.net/debian squeeze-proposed-updates main contrib non-free
+#deb-i386 http://debian.cantv.net/debian squeeze-proposed-updates main contrib non-free
+ 
+######  SECURITY DEBIAN LENNY & SQUEEZE UPDATES (MAIN - CONTRIB - NON-FREE) ######
+#deb-i386 http://security.debian.org/ lenny/updates main contrib non-free
+#deb-amd64 http://security.debian.org/ lenny/updates main contrib non-free
+#deb-i386 http://security.debian.org/ squeeze/updates main contrib non-free
+#deb-amd64 http://security.debian.org/ squeeze/updates main contrib non-free
+ 
+######  DEBIAN LENNY VOLATILE (MAIN - CONTRIB - NON-FREE) ######
+#deb-i386 http://volatile.debian.org/debian-volatile lenny/volatile main contrib non-free
+#deb-amd64 http://volatile.debian.org/debian-volatile lenny/volatile main contrib non-free
+ 
+####  DEBIAN SQUEEZE UPDATES (MAIN - CONTRIB - NON-FREE) ######
+#deb-amd64 http://debian.cantv.net/debian squeeze-updates main contrib non-free
+#deb-i386 http://debian.cantv.net/debian squeeze-updates main contrib non-free
+ 
+ 
+############################### JESSIE ######################################
+##### DEBIAN JESSIE PRINCIPAL #####
+#deb-amd64  http://debian.cantv.net/debian jessie main contrib non-free
+#deb-i386 http://debian.cantv.net/debian jessie main contrib non-free
+ 
+##### DEBIAN JESSIE BACKPORTS #####
+#deb-amd64  http://debian.cantv.net/debian jessie-backports main contrib non-free
+#deb-i386 http://debian.cantv.net/debian jessie-backports main contrib non-free
+ 
+##### DEBIAN JESSIE SEGURIDAD #####
+#deb-amd64 http://security.debian.org/ jessie/updates main contrib non-free
+#deb-i386 http://security.debian.org/ jessie/updates main contrib non-free
+ 
+##### DEBIAN JESSIE MULIMEDIA #####
+#deb-amd64 http://www.deb-multimedia.org jessie main non-free
+#deb-i386 http://www.deb-multimedia.org jessie main non-free
+ 
+ 
+ 
+############################### WHEEZY ######################################
+##### DEBIAN WHEEZY PRINCIPAL #####
+#deb-amd64  http://debian.cantv.net/debian wheezy main contrib non-free
+#deb-i386 http://debian.cantv.net/debian wheezy main contrib non-free
+deb-i386 http://tecnica.lab/debian/ wheezy main contrib non-free
+deb-amd64 http://tecnica.lab/debian/ wheezy main contrib non-free
+
+##### DEBIAN WHEEZY BACKPORTS #####
+#deb-amd64  http://debian.cantv.net/debian wheezy-backports main contrib non-free
+#deb-i386 http://debian.cantv.net/debian wheezy-backports main contrib non-free
+ 
+##### DEBIAN WHEEZY SEGURIDAD #####
+#deb-amd64 http://security.debian.org/ wheezy/updates main contrib non-free
+#deb-i386 http://security.debian.org/ wheezy/updates main contrib non-free
+ 
+##### DEBIAN WHEEZY MULIMEDIA #####
+#deb-amd64 http://www.deb-multimedia.org wheezy main non-free
+#deb-i386 http://www.deb-multimedia.org wheezy main non-free
+ 
+##### UBUNTU #####
+#deb-amd64 http://archive.ubuntu.com/ubuntu trusty main universe multiverse restricted
+#deb-amd64 http://archive.ubuntu.com/ubuntu trusty-proposed main universe multiverse restricted
+#deb-amd64 http://archive.ubuntu.com/ubuntu trusty-updates main universe multiverse restricted
+#deb-amd64 http://archive.ubuntu.com/ubuntu trusty-security main universe multiverse restricted
+#deb-amd64 http://archive.ubuntu.com/ubuntu trusty-backports main universe multiverse restricted
+#deb-i386 http://archive.ubuntu.com/ubuntu trusty main universe multiverse restricted
+#deb-i386 http://archive.ubuntu.com/ubuntu trusty-proposed main universe multiverse restricted
+#deb-i386 http://archive.ubuntu.com/ubuntu trusty-updates main universe multiverse restricted
+#deb-i386 http://archive.ubuntu.com/ubuntu trusty-security main universe multiverse restricted
+#deb-i386 http://archive.ubuntu.com/ubuntu trusty-backports main universe multiverse restricted
+ 
+######  CANAIMA RORAIMA USUARIOS ######
+#deb-i386 http://repositorio.canaima.softwarelibre.gob.ve roraima usuarios
+#deb-amd64 http://repositorio.canaima.softwarelibre.gob.ve roraima usuarios
+ 
+######  CANAIMA AUYANTEPUI (USUARIOS) ######
+#deb-i386 http://repositorio.canaima.softwarelibre.gob.ve auyantepui usuarios
+#deb-amd64 http://repositorio.canaima.softwarelibre.gob.ve auyantepui usuarios
+ 
+######  CANAIMA AUYANTEPUI (MAIN APORTES NO-LIBRES) ######
+#deb-i386 http://paquetes.canaima.softwarelibre.gob.ve auyantepui main aportes no-libres
+#deb-amd64 http://paquetes.canaima.softwarelibre.gob.ve auyantepui main aportes no-libres
+ 
+######  CANAIMA KUKENAN (USUARIOS) ######
+#deb-i386 http://repositorio.canaima.softwarelibre.gob.ve/ kukenan usuarios
+#deb-amd64 http://repositorio.canaima.softwarelibre.gob.ve/ kukenan usuarios
+ 
+######  CANAIMA SEGURIDAD (USUARIOS) ######
+#deb-i386 http://seguridad.canaima.softwarelibre.gob.ve/ seguridad usuarios
+#deb-amd64 http://seguridad.canaima.softwarelibre.gob.ve/ seguridad usuarios
+ 
+######  REPOSITORIOS JAVA ######
+#deb-i386 http://ppa.launchpad.net/webup8team/java/ubuntu precise main
+#deb-amd64 http://ppa.launchpad.net/webup8team/java/ubuntu precise main
+ 
+ 
+############### APLICACIONES ################
+##### SOZI #####
+deb-i386 http://packages.banuscorp.eu/debian wheezy main
+deb-amd64 http://packages.banuscorp.eu/debian wheezy main
+deb-src http://packages.banuscorp.eu/debian wheezy main
+ 
+##### POSTGRESQL ######
+deb-i386 http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main
+deb-amd64 http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main
+ 
+clean http://debian.cantv.net/debian
+clean http://packages.banuscorp.eu/debian
+clean http://security.debian.org/
+clean http://www.deb-multimedia.org
+clean http://http.debian.net/debian
+clean http://archive.ubuntu.com/ubuntu
+clean http://apt.posgresql.org/pub/repos/apt

@@ -1,0 +1,26 @@
+#### DEBIAN WHEEZY ####
+deb http://tecnica.lab/debian/ wheezy main contrib non-free
+deb http://tecnica.lab/debian/ wheezy-backports main
+deb http://tecnica.lab/seguridad/ wheezy/updates main contrib non-free
+deb http://tecnica.lab/multimedia/ wheezy main non-free
+
+#### DEBIAN JESSIE ####
+deb http://tecnica.lab/debian/ jessie main contrib non-free
+deb http://tecnica.lab/debian/ jessie-backports main
+deb http://tecnica.lab/seguridad/ jessie/updates main contrib non-free
+deb http://tecnica.lab/multimedia/ jessie main non-free
+
+#UBUNTU
+deb http://tecnica.lab/ubuntu trusty main universe multiverse restricted
+deb http://tecnica.lab/ubuntu trusty-proposed main universe multiverse restricted
+deb http://tecnica.lab/ubuntu trusty-updates main universe multiverse restricted
+deb http://tecnica.lab/ubuntu trusty-security main universe multiverse restricted
+deb http://tecnica.lab/ubuntu trusty-backports main universe multiverse restricted
+
+#SOZI
+deb http://tecnica.lab/sozi/debian wheezy main
+deb-src http://tecnica.lab/sozi/debian wheezy main
+
+#POSTGRESQL
+deb http://tecnica.lab/postgresql/ wheezy-pgdg main
+
